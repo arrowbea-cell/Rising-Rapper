@@ -1,0 +1,130 @@
+
+import { NPCArtist, Gender, Genre } from '../types';
+
+export const INITIAL_NPCS: NPCArtist[] = [
+  // --- TIER 1: GLOBAL SUPERSTARS (Top 10) - NERFED SLIGHTLY ---
+  { id: 'npc_nova', name: 'Nova Kyte', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 97, popularityByRegion: {'USA': 97, 'UK': 96, 'EU': 94, 'JPN': 88}, qualitySkill: 94, workEthic: 80, happiness: 90, monthlyListeners: 92000000 },
+  { id: 'npc_blaze', name: 'Lil Blaze', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 94, popularityByRegion: {'USA': 96, 'CAN': 93, 'UK': 68}, qualitySkill: 88, workEthic: 75, happiness: 85, monthlyListeners: 78000000 },
+  { id: 'npc_weeknd', name: 'The Dawn', gender: Gender.MALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 96, popularityByRegion: {'USA': 93, 'EU': 97, 'LATAM': 88}, qualitySkill: 96, workEthic: 85, happiness: 70, monthlyListeners: 90000000 },
+  { id: 'npc_bunny', name: 'El Conejo', gender: Gender.MALE, genre: Genre.LATIN, archetype: 'Mainstream', popularityGlobal: 95, popularityByRegion: {'LATAM': 99, 'USA': 82, 'EU': 88}, qualitySkill: 90, workEthic: 90, happiness: 95, monthlyListeners: 84000000 },
+  { id: 'npc_swift', name: 'Miss Americana', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Legacy', popularityGlobal: 98, popularityByRegion: {'USA': 98, 'UK': 94, 'OCE': 97, 'ASIA': 93}, qualitySkill: 95, workEthic: 99, happiness: 80, monthlyListeners: 99000000 },
+  { id: 'npc_drizzy', name: 'Drizzy', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 93, popularityByRegion: {'USA': 97, 'CAN': 98, 'UK': 88}, qualitySkill: 86, workEthic: 95, happiness: 70, monthlyListeners: 76000000 },
+  { id: 'npc_bts', name: 'B7S', gender: Gender.MALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 92, popularityByRegion: {'KOR': 99, 'JPN': 97, 'USA': 82, 'LATAM': 88}, qualitySkill: 94, workEthic: 100, happiness: 60, monthlyListeners: 70000000 },
+  { id: 'npc_bey', name: 'Queen B', gender: Gender.FEMALE, genre: Genre.RNB, archetype: 'Legacy', popularityGlobal: 91, popularityByRegion: {'USA': 96, 'UK': 88, 'AFR': 82}, qualitySkill: 98, workEthic: 70, happiness: 90, monthlyListeners: 64000000 },
+  { id: 'npc_guetta', name: 'David G', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Mainstream', popularityGlobal: 88, popularityByRegion: {'EU': 97, 'USA': 68, 'UK': 82}, qualitySkill: 84, workEthic: 90, happiness: 95, monthlyListeners: 68000000 },
+  { id: 'npc_adele', name: 'Adeline', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Legacy', popularityGlobal: 89, popularityByRegion: {'UK': 98, 'USA': 92, 'EU': 92}, qualitySkill: 99, workEthic: 20, happiness: 85, monthlyListeners: 60000000 },
+
+  // --- TIER 2: A-LISTERS (Popular) - SLIGHT TWEAKS ---
+  { id: 'npc_11', name: 'Trapsoul King', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Mainstream', popularityGlobal: 83, popularityByRegion: {'USA': 88}, qualitySkill: 86, workEthic: 85, happiness: 70, monthlyListeners: 52000000 },
+  { id: 'npc_12', name: 'Doja Catty', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 86, popularityByRegion: {'USA': 90}, qualitySkill: 88, workEthic: 80, happiness: 60, monthlyListeners: 58000000 },
+  { id: 'npc_13', name: 'Travis Scot', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 87, popularityByRegion: {'USA': 93}, qualitySkill: 84, workEthic: 70, happiness: 80, monthlyListeners: 57000000 },
+  { id: 'npc_14', name: 'Karol G', gender: Gender.FEMALE, genre: Genre.LATIN, archetype: 'Mainstream', popularityGlobal: 84, popularityByRegion: {'LATAM': 96}, qualitySkill: 85, workEthic: 90, happiness: 90, monthlyListeners: 54000000 },
+  { id: 'npc_15', name: 'Burnaboy', gender: Gender.MALE, genre: Genre.AFROBEATS, archetype: 'Mainstream', popularityGlobal: 78, popularityByRegion: {'AFR': 98, 'UK': 78}, qualitySkill: 88, workEthic: 85, happiness: 85, monthlyListeners: 42000000 },
+  { id: 'npc_16', name: 'Dua Lupa', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 85, popularityByRegion: {'UK': 96, 'EU': 92}, qualitySkill: 86, workEthic: 92, happiness: 88, monthlyListeners: 60000000 },
+  { id: 'npc_17', name: 'SZA', gender: Gender.FEMALE, genre: Genre.RNB, archetype: 'Mainstream', popularityGlobal: 83, popularityByRegion: {'USA': 92}, qualitySkill: 92, workEthic: 60, happiness: 65, monthlyListeners: 55000000 },
+  { id: 'npc_18', name: 'Post Malon', gender: Gender.MALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 84, popularityByRegion: {'USA': 90}, qualitySkill: 84, workEthic: 80, happiness: 90, monthlyListeners: 58000000 },
+  { id: 'npc_19', name: 'Imagine Dragon', gender: Gender.MALE, genre: Genre.ROCK, archetype: 'Mainstream', popularityGlobal: 80, popularityByRegion: {'USA': 82}, qualitySkill: 78, workEthic: 90, happiness: 85, monthlyListeners: 48000000 },
+  { id: 'npc_20', name: 'Blackpink', gender: Gender.FEMALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 86, popularityByRegion: {'KOR': 98, 'ASIA': 92}, qualitySkill: 88, workEthic: 80, happiness: 70, monthlyListeners: 52000000 },
+
+  // --- TIER 3: RISING STARS & REGIONAL HEROES ---
+  { id: 'npc_21', name: 'Ice Spice', gender: Gender.FEMALE, genre: Genre.HIP_HOP, archetype: 'Rising', popularityGlobal: 70, popularityByRegion: {'USA': 85}, qualitySkill: 75, workEthic: 90, happiness: 80, monthlyListeners: 35000000 },
+  { id: 'npc_22', name: 'Central Cee', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Rising', popularityGlobal: 75, popularityByRegion: {'UK': 95, 'EU': 80}, qualitySkill: 82, workEthic: 85, happiness: 75, monthlyListeners: 40000000 },
+  { id: 'npc_23', name: 'NewJeans', gender: Gender.FEMALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 78, popularityByRegion: {'KOR': 98}, qualitySkill: 85, workEthic: 95, happiness: 70, monthlyListeners: 38000000 },
+  { id: 'npc_24', name: 'Rema', gender: Gender.MALE, genre: Genre.AFROBEATS, archetype: 'Rising', popularityGlobal: 72, popularityByRegion: {'AFR': 90, 'EU': 75}, qualitySkill: 84, workEthic: 88, happiness: 85, monthlyListeners: 36000000 },
+  { id: 'npc_25', name: 'Fred Again', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Rising', popularityGlobal: 68, popularityByRegion: {'UK': 90, 'EU': 85}, qualitySkill: 88, workEthic: 90, happiness: 80, monthlyListeners: 28000000 },
+  { id: 'npc_26', name: 'Rosalia', gender: Gender.FEMALE, genre: Genre.LATIN, archetype: 'Mainstream', popularityGlobal: 76, popularityByRegion: {'EU': 90, 'LATAM': 85}, qualitySkill: 92, workEthic: 85, happiness: 85, monthlyListeners: 42000000 },
+  { id: 'npc_27', name: 'Jack Harlow', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 74, popularityByRegion: {'USA': 88}, qualitySkill: 78, workEthic: 82, happiness: 88, monthlyListeners: 39000000 },
+  { id: 'npc_28', name: 'Tate McRae', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Rising', popularityGlobal: 69, popularityByRegion: {'CAN': 90, 'USA': 75}, qualitySkill: 80, workEthic: 92, happiness: 78, monthlyListeners: 32000000 },
+  { id: 'npc_29', name: 'Peso Pluma', gender: Gender.MALE, genre: Genre.LATIN, archetype: 'Rising', popularityGlobal: 75, popularityByRegion: {'LATAM': 95, 'USA': 80}, qualitySkill: 80, workEthic: 85, happiness: 80, monthlyListeners: 48000000 },
+  { id: 'npc_30', name: 'Olivia Rod', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 82, popularityByRegion: {'USA': 90}, qualitySkill: 89, workEthic: 85, happiness: 75, monthlyListeners: 52000000 },
+
+  // --- TIER 4: GENRE SPECIALISTS ---
+  { id: 'npc_31', name: 'Metro Boomin', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 80, popularityByRegion: {'USA': 90}, qualitySkill: 95, workEthic: 90, happiness: 85, monthlyListeners: 45000000 },
+  { id: 'npc_32', name: 'Calvin Harris', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Legacy', popularityGlobal: 78, popularityByRegion: {'UK': 90}, qualitySkill: 88, workEthic: 70, happiness: 90, monthlyListeners: 48000000 },
+  { id: 'npc_33', name: 'Arctic Monkeys', gender: Gender.MALE, genre: Genre.ROCK, archetype: 'Legacy', popularityGlobal: 75, popularityByRegion: {'UK': 95}, qualitySkill: 90, workEthic: 60, happiness: 80, monthlyListeners: 42000000 },
+  { id: 'npc_34', name: 'Maneskin', gender: Gender.MALE, genre: Genre.ROCK, archetype: 'Rising', popularityGlobal: 65, popularityByRegion: {'EU': 85}, qualitySkill: 82, workEthic: 88, happiness: 85, monthlyListeners: 29000000 },
+  { id: 'npc_35', name: 'Tems', gender: Gender.FEMALE, genre: Genre.RNB, archetype: 'Rising', popularityGlobal: 68, popularityByRegion: {'AFR': 90, 'USA': 65}, qualitySkill: 92, workEthic: 80, happiness: 80, monthlyListeners: 25000000 },
+  { id: 'npc_36', name: 'Skrillex', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Legacy', popularityGlobal: 65, popularityByRegion: {'USA': 75}, qualitySkill: 94, workEthic: 85, happiness: 85, monthlyListeners: 22000000 },
+  { id: 'npc_37', name: 'Frank Ocean', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Legacy', popularityGlobal: 72, popularityByRegion: {'USA': 85}, qualitySkill: 98, workEthic: 10, happiness: 50, monthlyListeners: 30000000 },
+  { id: 'npc_38', name: 'Tyler Creator', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Indie', popularityGlobal: 74, popularityByRegion: {'USA': 85}, qualitySkill: 95, workEthic: 80, happiness: 90, monthlyListeners: 32000000 },
+  { id: 'npc_39', name: 'Lana Del Rey', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Legacy', popularityGlobal: 80, popularityByRegion: {'USA': 90}, qualitySkill: 94, workEthic: 65, happiness: 40, monthlyListeners: 50000000 },
+  { id: 'npc_40', name: 'Playboi Carti', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 75, popularityByRegion: {'USA': 88}, qualitySkill: 80, workEthic: 40, happiness: 70, monthlyListeners: 35000000 },
+
+  // --- TIER 5: MID-TIER & UPCOMING (41-70) ---
+  { id: 'npc_41', name: 'Yeat', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Rising', popularityGlobal: 60, popularityByRegion: {'USA': 75}, qualitySkill: 70, workEthic: 85, happiness: 75, monthlyListeners: 18000000 },
+  { id: 'npc_42', name: 'Stray Kids', gender: Gender.MALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 72, popularityByRegion: {'KOR': 90}, qualitySkill: 88, workEthic: 95, happiness: 70, monthlyListeners: 28000000 },
+  { id: 'npc_43', name: 'IVE', gender: Gender.FEMALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 65, popularityByRegion: {'KOR': 85}, qualitySkill: 82, workEthic: 90, happiness: 75, monthlyListeners: 15000000 },
+  { id: 'npc_44', name: 'Tyla', gender: Gender.FEMALE, genre: Genre.AFROBEATS, archetype: 'Rising', popularityGlobal: 55, popularityByRegion: {'AFR': 80}, qualitySkill: 80, workEthic: 90, happiness: 90, monthlyListeners: 20000000 },
+  { id: 'npc_45', name: 'PinkPantheress', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Indie', popularityGlobal: 58, popularityByRegion: {'UK': 75}, qualitySkill: 78, workEthic: 80, happiness: 70, monthlyListeners: 22000000 },
+  { id: 'npc_46', name: 'Mitski', gender: Gender.FEMALE, genre: Genre.ROCK, archetype: 'Indie', popularityGlobal: 62, popularityByRegion: {'USA': 70}, qualitySkill: 90, workEthic: 75, happiness: 40, monthlyListeners: 24000000 },
+  { id: 'npc_47', name: 'Joji', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Indie', popularityGlobal: 68, popularityByRegion: {'USA': 75}, qualitySkill: 85, workEthic: 60, happiness: 50, monthlyListeners: 26000000 },
+  { id: 'npc_48', name: 'Giveon', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Rising', popularityGlobal: 55, popularityByRegion: {'USA': 65}, qualitySkill: 88, workEthic: 75, happiness: 70, monthlyListeners: 19000000 },
+  { id: 'npc_49', name: 'Bizarrap', gender: Gender.MALE, genre: Genre.LATIN, archetype: 'Mainstream', popularityGlobal: 70, popularityByRegion: {'LATAM': 95}, qualitySkill: 90, workEthic: 95, happiness: 90, monthlyListeners: 40000000 },
+  { id: 'npc_50', name: 'Twice', gender: Gender.FEMALE, genre: Genre.KPOP, archetype: 'Legacy', popularityGlobal: 75, popularityByRegion: {'KOR': 90}, qualitySkill: 85, workEthic: 90, happiness: 85, monthlyListeners: 30000000 },
+  
+  { id: 'npc_51', name: 'Charli XCX', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Indie', popularityGlobal: 55, popularityByRegion: {'UK': 70}, qualitySkill: 85, workEthic: 85, happiness: 80, monthlyListeners: 18000000 },
+  { id: 'npc_52', name: 'Troye Sivan', gender: Gender.MALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 60, popularityByRegion: {'OCE': 85}, qualitySkill: 80, workEthic: 80, happiness: 85, monthlyListeners: 21000000 },
+  { id: 'npc_53', name: 'Lil Nas X', gender: Gender.MALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 65, popularityByRegion: {'USA': 80}, qualitySkill: 75, workEthic: 70, happiness: 80, monthlyListeners: 27000000 },
+  { id: 'npc_54', name: 'Gunna', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 62, popularityByRegion: {'USA': 80}, qualitySkill: 78, workEthic: 85, happiness: 75, monthlyListeners: 25000000 },
+  { id: 'npc_55', name: 'Don Toliver', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Rising', popularityGlobal: 58, popularityByRegion: {'USA': 70}, qualitySkill: 82, workEthic: 80, happiness: 80, monthlyListeners: 23000000 },
+  { id: 'npc_56', name: 'Kali Uchis', gender: Gender.FEMALE, genre: Genre.RNB, archetype: 'Mainstream', popularityGlobal: 60, popularityByRegion: {'USA': 70}, qualitySkill: 85, workEthic: 75, happiness: 85, monthlyListeners: 24000000 },
+  { id: 'npc_57', name: 'Marshmello', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Mainstream', popularityGlobal: 70, popularityByRegion: {'USA': 80}, qualitySkill: 75, workEthic: 90, happiness: 90, monthlyListeners: 35000000 },
+  { id: 'npc_58', name: 'Tiësto', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Legacy', popularityGlobal: 65, popularityByRegion: {'EU': 85}, qualitySkill: 80, workEthic: 95, happiness: 90, monthlyListeners: 32000000 },
+  { id: 'npc_59', name: 'Paramore', gender: Gender.FEMALE, genre: Genre.ROCK, archetype: 'Legacy', popularityGlobal: 60, popularityByRegion: {'USA': 75}, qualitySkill: 90, workEthic: 70, happiness: 80, monthlyListeners: 20000000 },
+  { id: 'npc_60', name: 'Gorillaz', gender: Gender.MALE, genre: Genre.ROCK, archetype: 'Legacy', popularityGlobal: 62, popularityByRegion: {'UK': 80}, qualitySkill: 92, workEthic: 60, happiness: 85, monthlyListeners: 26000000 },
+
+  // --- TIER 6: NICHE & LOCAL (61-80) ---
+  { id: 'npc_61', name: 'Fujii Kaze', gender: Gender.MALE, genre: Genre.POP, archetype: 'Rising', popularityGlobal: 40, popularityByRegion: {'JPN': 90}, qualitySkill: 90, workEthic: 80, happiness: 90, monthlyListeners: 12000000 },
+  { id: 'npc_62', name: 'YOASOBI', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 50, popularityByRegion: {'JPN': 95}, qualitySkill: 88, workEthic: 90, happiness: 85, monthlyListeners: 15000000 },
+  { id: 'npc_63', name: 'Anitta', gender: Gender.FEMALE, genre: Genre.LATIN, archetype: 'Mainstream', popularityGlobal: 60, popularityByRegion: {'LATAM': 98}, qualitySkill: 80, workEthic: 95, happiness: 90, monthlyListeners: 28000000 },
+  { id: 'npc_64', name: 'Wizkid', gender: Gender.MALE, genre: Genre.AFROBEATS, archetype: 'Legacy', popularityGlobal: 55, popularityByRegion: {'AFR': 95}, qualitySkill: 85, workEthic: 80, happiness: 85, monthlyListeners: 18000000 },
+  { id: 'npc_65', name: 'Dave', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 50, popularityByRegion: {'UK': 90}, qualitySkill: 92, workEthic: 80, happiness: 75, monthlyListeners: 14000000 },
+  { id: 'npc_66', name: 'Stormzy', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Mainstream', popularityGlobal: 52, popularityByRegion: {'UK': 92}, qualitySkill: 85, workEthic: 85, happiness: 85, monthlyListeners: 16000000 },
+  { id: 'npc_67', name: 'Angèle', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 45, popularityByRegion: {'EU': 85}, qualitySkill: 85, workEthic: 80, happiness: 90, monthlyListeners: 10000000 },
+  { id: 'npc_68', name: 'Stromae', gender: Gender.MALE, genre: Genre.POP, archetype: 'Legacy', popularityGlobal: 50, popularityByRegion: {'EU': 90}, qualitySkill: 95, workEthic: 50, happiness: 70, monthlyListeners: 15000000 },
+  { id: 'npc_69', name: 'Tame Impala', gender: Gender.MALE, genre: Genre.ROCK, archetype: 'Indie', popularityGlobal: 60, popularityByRegion: {'OCE': 90}, qualitySkill: 92, workEthic: 60, happiness: 80, monthlyListeners: 22000000 },
+  { id: 'npc_70', name: 'The Kid LAROI', gender: Gender.MALE, genre: Genre.POP, archetype: 'Rising', popularityGlobal: 62, popularityByRegion: {'OCE': 95}, qualitySkill: 78, workEthic: 85, happiness: 85, monthlyListeners: 25000000 },
+
+  // --- TIER 7: UNDERGROUND & FILLER (71-100) ---
+  { id: 'npc_71', name: 'Ken Carson', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Rising', popularityGlobal: 40, popularityByRegion: {'USA': 60}, qualitySkill: 70, workEthic: 80, happiness: 80, monthlyListeners: 8000000 },
+  { id: 'npc_72', name: 'Destroy Lonely', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Rising', popularityGlobal: 38, popularityByRegion: {'USA': 58}, qualitySkill: 72, workEthic: 78, happiness: 75, monthlyListeners: 7000000 },
+  { id: 'npc_73', name: 'Clairo', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Indie', popularityGlobal: 45, popularityByRegion: {'USA': 55}, qualitySkill: 85, workEthic: 70, happiness: 70, monthlyListeners: 12000000 },
+  { id: 'npc_74', name: 'Beabadoobee', gender: Gender.FEMALE, genre: Genre.ROCK, archetype: 'Indie', popularityGlobal: 42, popularityByRegion: {'UK': 60}, qualitySkill: 82, workEthic: 75, happiness: 80, monthlyListeners: 11000000 },
+  { id: 'npc_75', name: 'Laufey', gender: Gender.FEMALE, genre: Genre.POP, archetype: 'Indie', popularityGlobal: 48, popularityByRegion: {'USA': 50}, qualitySkill: 90, workEthic: 85, happiness: 90, monthlyListeners: 13000000 },
+  { id: 'npc_76', name: 'Omar Apollo', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Indie', popularityGlobal: 35, popularityByRegion: {'USA': 45}, qualitySkill: 80, workEthic: 80, happiness: 85, monthlyListeners: 9000000 },
+  { id: 'npc_77', name: 'Dominic Fike', gender: Gender.MALE, genre: Genre.ROCK, archetype: 'Indie', popularityGlobal: 45, popularityByRegion: {'USA': 60}, qualitySkill: 82, workEthic: 70, happiness: 75, monthlyListeners: 14000000 },
+  { id: 'npc_78', name: 'Grimes', gender: Gender.FEMALE, genre: Genre.EDM, archetype: 'Indie', popularityGlobal: 40, popularityByRegion: {'CAN': 60}, qualitySkill: 85, workEthic: 50, happiness: 60, monthlyListeners: 8000000 },
+  { id: 'npc_79', name: 'Peggy Gou', gender: Gender.FEMALE, genre: Genre.EDM, archetype: 'Mainstream', popularityGlobal: 55, popularityByRegion: {'EU': 75}, qualitySkill: 85, workEthic: 85, happiness: 90, monthlyListeners: 16000000 },
+  { id: 'npc_80', name: 'Fisher', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Mainstream', popularityGlobal: 52, popularityByRegion: {'OCE': 80}, qualitySkill: 78, workEthic: 90, happiness: 95, monthlyListeners: 15000000 },
+  
+  // FILLERS
+  { id: 'npc_81', name: 'Baby Keem', gender: Gender.MALE, genre: Genre.HIP_HOP, archetype: 'Rising', popularityGlobal: 45, popularityByRegion: {'USA': 60}, qualitySkill: 85, workEthic: 80, happiness: 85, monthlyListeners: 12000000 },
+  { id: 'npc_82', name: 'Don Omar', gender: Gender.MALE, genre: Genre.LATIN, archetype: 'Legacy', popularityGlobal: 50, popularityByRegion: {'LATAM': 80}, qualitySkill: 80, workEthic: 50, happiness: 80, monthlyListeners: 20000000 },
+  { id: 'npc_83', name: 'Daddy Yankee', gender: Gender.MALE, genre: Genre.LATIN, archetype: 'Legacy', popularityGlobal: 65, popularityByRegion: {'LATAM': 90}, qualitySkill: 85, workEthic: 40, happiness: 90, monthlyListeners: 35000000 },
+  { id: 'npc_84', name: 'NMIXX', gender: Gender.FEMALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 30, popularityByRegion: {'KOR': 60}, qualitySkill: 88, workEthic: 95, happiness: 60, monthlyListeners: 5000000 },
+  { id: 'npc_85', name: 'ITZY', gender: Gender.FEMALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 55, popularityByRegion: {'KOR': 80}, qualitySkill: 85, workEthic: 90, happiness: 75, monthlyListeners: 12000000 },
+  { id: 'npc_86', name: 'TXT', gender: Gender.MALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 60, popularityByRegion: {'KOR': 85}, qualitySkill: 88, workEthic: 95, happiness: 80, monthlyListeners: 18000000 },
+  { id: 'npc_87', name: 'Enhypen', gender: Gender.MALE, genre: Genre.KPOP, archetype: 'K-Idol', popularityGlobal: 58, popularityByRegion: {'KOR': 82}, qualitySkill: 85, workEthic: 95, happiness: 80, monthlyListeners: 16000000 },
+  { id: 'npc_88', name: 'Asake', gender: Gender.MALE, genre: Genre.AFROBEATS, archetype: 'Rising', popularityGlobal: 45, popularityByRegion: {'AFR': 85}, qualitySkill: 85, workEthic: 90, happiness: 90, monthlyListeners: 10000000 },
+  { id: 'npc_89', name: 'Ayra Starr', gender: Gender.FEMALE, genre: Genre.AFROBEATS, archetype: 'Rising', popularityGlobal: 42, popularityByRegion: {'AFR': 80}, qualitySkill: 82, workEthic: 90, happiness: 90, monthlyListeners: 9000000 },
+  { id: 'npc_90', name: 'Fireboy DML', gender: Gender.MALE, genre: Genre.AFROBEATS, archetype: 'Rising', popularityGlobal: 40, popularityByRegion: {'AFR': 75}, qualitySkill: 80, workEthic: 85, happiness: 85, monthlyListeners: 8000000 },
+  { id: 'npc_91', name: 'Disclosure', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Legacy', popularityGlobal: 45, popularityByRegion: {'UK': 70}, qualitySkill: 90, workEthic: 70, happiness: 85, monthlyListeners: 14000000 },
+  { id: 'npc_92', name: 'Zedd', gender: Gender.MALE, genre: Genre.EDM, archetype: 'Legacy', popularityGlobal: 50, popularityByRegion: {'USA': 65}, qualitySkill: 85, workEthic: 75, happiness: 80, monthlyListeners: 18000000 },
+  { id: 'npc_93', name: 'Steve Lacy', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Indie', popularityGlobal: 55, popularityByRegion: {'USA': 70}, qualitySkill: 88, workEthic: 70, happiness: 75, monthlyListeners: 20000000 },
+  { id: 'npc_94', name: 'Daniel Caesar', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Indie', popularityGlobal: 52, popularityByRegion: {'CAN': 75}, qualitySkill: 90, workEthic: 65, happiness: 80, monthlyListeners: 19000000 },
+  { id: 'npc_95', name: 'Brent Faiyaz', gender: Gender.MALE, genre: Genre.RNB, archetype: 'Indie', popularityGlobal: 50, popularityByRegion: {'USA': 65}, qualitySkill: 85, workEthic: 80, happiness: 70, monthlyListeners: 17000000 },
+  { id: 'npc_96', name: 'Phoebe Bridgers', gender: Gender.FEMALE, genre: Genre.ROCK, archetype: 'Indie', popularityGlobal: 45, popularityByRegion: {'USA': 60}, qualitySkill: 92, workEthic: 75, happiness: 50, monthlyListeners: 12000000 },
+  { id: 'npc_97', name: 'Hozier', gender: Gender.MALE, genre: Genre.ROCK, archetype: 'Legacy', popularityGlobal: 55, popularityByRegion: {'UK': 70}, qualitySkill: 95, workEthic: 60, happiness: 80, monthlyListeners: 25000000 },
+  { id: 'npc_98', name: 'Florence Machine', gender: Gender.FEMALE, genre: Genre.ROCK, archetype: 'Legacy', popularityGlobal: 50, popularityByRegion: {'UK': 75}, qualitySkill: 94, workEthic: 50, happiness: 85, monthlyListeners: 18000000 },
+  { id: 'npc_99', name: 'Glass Animals', gender: Gender.MALE, genre: Genre.POP, archetype: 'Mainstream', popularityGlobal: 58, popularityByRegion: {'UK': 70}, qualitySkill: 85, workEthic: 80, happiness: 85, monthlyListeners: 28000000 },
+  { id: 'npc_100', name: 'J Balvin', gender: Gender.MALE, genre: Genre.LATIN, archetype: 'Legacy', popularityGlobal: 65, popularityByRegion: {'LATAM': 90}, qualitySkill: 85, workEthic: 85, happiness: 90, monthlyListeners: 45000000 },
+];
+
+export const BACKGROUND_RANKING_DATA = [
+    ...Array.from({length: 5}).map((_, i) => ({ id: `bg_star_${i}`, ml: 80000000 - (i * 2000000) })), // Reduced max ML
+    ...Array.from({length: 10}).map((_, i) => ({ id: `bg_top_${i}`, ml: 55000000 - (i * 1000000) })),
+    ...Array.from({length: 20}).map((_, i) => ({ id: `bg_alist_${i}`, ml: 50000000 - (i * 1200000) })),
+    ...Array.from({length: 40}).map((_, i) => ({ id: `bg_main_${i}`, ml: 25000000 - (i * 500000) })),
+    ...Array.from({length: 50}).map((_, i) => ({ id: `bg_mid_${i}`, ml: 8000000 - (i * 150000) })),
+    ...Array.from({length: 30}).map((_, i) => ({ id: `bg_indie_${i}`, ml: 800000 - (i * 20000) })),
+];
